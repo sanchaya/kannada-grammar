@@ -148,7 +148,15 @@ npm run build
 
 ## Deployment
 
-ಈ ಅಪ್ಲಿಕೇಶನ್ static Vite build ಆಗಿರುವುದರಿಂದ GitHub Pages, Netlify, Vercel, Cloudflare Pages ಅಥವಾ ಯಾವುದೇ static hostingನಲ್ಲಿ deploy ಮಾಡಬಹುದು.
+ಈ ಅಪ್ಲಿಕೇಶನ್ GitHub Pages ಮೂಲಕ deploy ಆಗುವಂತೆ ಸಿದ್ಧಪಡಿಸಲಾಗಿದೆ.
+
+Production URL:
+
+```text
+https://vyakarana.sanchaya.net/
+```
+
+ಪ್ರತಿ ಬಾರಿ `main` branchಗೆ push ಮಾಡಿದಾಗ `.github/workflows/pages.yml` workflow `npm ci`, `npm run build` ನಡೆಸಿ `dist/` output ಅನ್ನು GitHub Pagesಗೆ deploy ಮಾಡುತ್ತದೆ.
 
 ಸಾಮಾನ್ಯ build command:
 
@@ -160,6 +168,18 @@ Publish directory:
 
 ```text
 dist
+```
+
+Custom domain GitHub Pagesನಲ್ಲಿ ಉಳಿಯಲು `public/CNAME` ಫೈಲ್‌ನಲ್ಲಿ ಈ domain ಇದೆ:
+
+```text
+vyakarana.sanchaya.net
+```
+
+DNSನಲ್ಲಿ `vyakarana.sanchaya.net` GitHub Pagesಗೆ point ಆಗಿರಬೇಕು. ಸಾಮಾನ್ಯವಾಗಿ subdomainಗಾಗಿ CNAME record ಅನ್ನು organization/user Pages hostಗೆ map ಮಾಡಲಾಗುತ್ತದೆ:
+
+```text
+vyakarana.sanchaya.net CNAME sanchaya.github.io
 ```
 
 ## ಪರವಾನಗಿ
