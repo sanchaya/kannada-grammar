@@ -146,7 +146,6 @@ npm run build
 - Navigation ಕನ್ನಡದಲ್ಲಿರಬೇಕು
 - ಪಾಠ ಆಯ್ಕೆ ಮಾಡಿದಾಗ ಸ್ಥಳೀಯ lesson content ಕಾಣಬೇಕು
 - Search ಮತ್ತು filters ಕೆಲಸ ಮಾಡಬೇಕು
-- ಹೊರಗಿನ ಕಲಿಕಾ ಪೋರ್ಟಲ್‌ಗಳಿಗೆ ಮುಖ್ಯ ಕಲಿಕಾ flow ಕಳಿಸಬಾರದು
 
 ## Deployment
 
